@@ -1,11 +1,11 @@
 import Header from "./components/Header";
 import InputBar from "./components/InputBar";
 import TodoCard from "./components/TodoCard";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function App() {
 
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos')) || [])
 
   const addTodo = function(newTodo) {
     setTodos([...todos, newTodo])
@@ -14,6 +14,8 @@ export default function App() {
   const deleteTodo = function(idx) {
     setTodos(todos.filter((_, index) => index !== idx))
   }
+
+  useEffect(() => {localStorage.setItem('todos', JSON.stringify(todos))}, [todos])
 
   return (
     <>
