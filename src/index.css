@@ -77,6 +77,11 @@ header {
 
 
 @media (max-width: 500px) {
+
+
+  body {
+    width: 500px;
+  }
   
   .header-title {
     font-size: 1.5rem;
