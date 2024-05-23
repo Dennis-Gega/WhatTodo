@@ -1,0 +1,75 @@
+* {
+  font-family: kohinoor-bangla, sans-serif;
+  color: #6E6E6E;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+body, header, .input-container {
+  background-color: #FFF2E1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding-top: 40px;
+}
+
+.header-title {
+  font-size: 2.6rem;
+}
+
+.input-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.input-bar, .todo-card {
+  padding: 10px;
+  width: 750px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #EAD8C0;
+}
+
+.input-button {
+  margin-left: -100px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 1rem;
+  background-color: #D1BB9E;
+}
+
+.input-button:hover {
+  cursor: pointer;
+}
+
+.input-button:active {
+  opacity: .5;
+}
+
+.todo-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.fa-pen-to-square, .fa-trash {
+  margin-right: 10px;
+}
+
+.fa-pen-to-square:hover, .fa-trash:hover {
+  cursor: pointer;
+}
+
+.fa-pen-to-square:active, .fa-trash:active {
+  opacity: .5;
+}
