@@ -1,4 +1,4 @@
-# Todo Application
+# WhatTodo
 
 This is a simple Todo application built with React. It allows users to add, view, and delete todo items.
 
