@@ -47,6 +47,7 @@ header {
   background-color: #D1BB9E;
 }
 
+
 .input-button:hover {
   cursor: pointer;
 }
@@ -72,4 +73,27 @@ header {
 
 .fa-pen-to-square:active, .fa-trash:active {
   opacity: .5;
+}
+
+
+@media (max-width: 500px) {
+  
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .input-bar, .todo-card {
+    font-size: .5rem;
+    width: 150px;
+    height: 30px;
+    padding: 0px;
+    padding-left: 5px;
+  }
+
+  .input-button {
+    margin-left: -40px;
+    height: 30px;
+    width: 40px;
+    font-size: .6rem;
+  }
 }
